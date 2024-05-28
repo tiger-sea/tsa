@@ -1,11 +1,11 @@
 data {
-    int n_sample;
-    array[n_sample] real y;
+    int n_sample; // number of samples (data)
+    array[n_sample] real y; // samples (data)
 }
 
 parameters {
-    real mu_zero;
-    array[n_sample] real mu;
+    real mu_zero; // initial state
+    array[n_sample] real mu; // state
     real<lower=0> s_w;
     real<lower=0> s_v;
 }
